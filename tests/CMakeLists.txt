@@ -1,0 +1,20 @@
+add_executable(test_geometry test_geometry.cpp)
+target_link_libraries(test_geometry PRIVATE sitesketch_core)
+add_test(NAME test_geometry COMMAND test_geometry)
+
+add_executable(test_csv_parser test_csv_parser.cpp)
+target_link_libraries(test_csv_parser PRIVATE sitesketch_core)
+add_test(NAME test_csv_parser COMMAND test_csv_parser)
+
+add_executable(test_layout_engine test_layout_engine.cpp)
+target_link_libraries(test_layout_engine PRIVATE sitesketch_core)
+add_test(NAME test_layout_engine COMMAND test_layout_engine)
+
+add_executable(test_dxf_writer test_dxf_writer.cpp)
+target_link_libraries(test_dxf_writer PRIVATE sitesketch_core)
+add_test(NAME test_dxf_writer COMMAND test_dxf_writer)
+
+add_executable(test_report_writer test_report_writer.cpp)
+target_link_libraries(test_report_writer PRIVATE sitesketch_core)
+add_test(NAME test_report_writer COMMAND test_report_writer)
+
